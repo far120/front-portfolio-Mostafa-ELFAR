@@ -17,6 +17,7 @@ export function ThemeProvider({ children }) {
       document.body.classList.remove("dark");
     }
     document.documentElement.setAttribute("data-theme", theme);
+    document.documentElement.style.colorScheme = theme;
   }, [theme]);
 
   const toggleTheme = () => {

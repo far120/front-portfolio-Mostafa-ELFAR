@@ -17,7 +17,7 @@ export default function Home() {
   const featuredSkills = [...skills].sort((a, b) => b.level - a.level).slice(0, 6);
 
   return (
-    <div className="relative overflow-hidden bg-[radial-gradient(circle_at_top_left,rgba(16,185,129,0.16),transparent_26%),radial-gradient(circle_at_top_right,rgba(245,158,11,0.14),transparent_24%),linear-gradient(180deg,#f8fafc_0%,#eef2ff_45%,#f8fafc_100%)] text-slate-900 dark:bg-slate-950 dark:text-slate-100">
+    <div className="relative overflow-hidden bg-[radial-gradient(circle_at_top_left,rgba(16,185,129,0.16),transparent_26%),radial-gradient(circle_at_top_right,rgba(245,158,11,0.14),transparent_24%),linear-gradient(180deg,#f8fafc_0%,#eef2ff_45%,#f8fafc_100%)] text-slate-900 dark:bg-[radial-gradient(circle_at_top_left,rgba(16,185,129,0.15),transparent_26%),radial-gradient(circle_at_top_right,rgba(245,158,11,0.12),transparent_24%),linear-gradient(180deg,#020617_0%,#0f172a_45%,#020617_100%)] dark:bg-slate-950 dark:text-slate-100">
       <section className="mx-auto flex w-full max-w-7xl flex-col gap-8 px-4 py-8 sm:px-6 lg:px-8 lg:py-12">
         <GlassCard className="overflow-hidden">
           <div className="grid gap-0 lg:grid-cols-[1.08fr_0.92fr]">
