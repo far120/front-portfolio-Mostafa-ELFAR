@@ -1,0 +1,304 @@
+{
+  "about": {
+    "name": "MOSTAFA ELFAR",
+    "title": "MERN Stack Developer",
+    "email": "mostafa.m.elfar@gmail.com",
+    "description": "Passionate MERN Stack Developer with experience building scalable web applications, real-time systems, and modern UI interfaces. I focus on performance, clean architecture, and delivering high-quality user experiences.",
+    "image": "https://drive.google.com/file/d/1H7MENALl78Pa_SVRm2NHFWN5LtUQU1qc/view?usp=drive_link"
+  },
+  "certifications": [
+    {
+      "id": 1,
+      "title": "MEAN Stack: Web Developer Career Accelerator",
+      "organization": "NTI",
+      "issueDate": "2025",
+      "credentialUrl": "https://drive.google.com/uc?export=download&id=107t_G_WyB_AGHDqdMW5UbqmHyqiZf6C-"
+    },
+    {
+      "id": 2,
+      "title": "Software Development - React Web Developer Job Profile",
+      "organization": "Digital Egypt Pioneers Program",
+      "issueDate": "2024",
+      "credentialUrl": "https://drive.google.com/uc?export=download&id=1eqEAHbjomAC-6ZstrUB3qvcEe6vYuxeY"
+    },
+    {
+      "id": 3,
+      "title": "Software Development - Full Stack .NET Web Developer",
+      "organization": "Digital Egypt Pioneers Program",
+      "issueDate": "2026",
+      "credentialUrl": "https://drive.google.com/uc?export=download&id=1zT0U_8Vglo4T7lc_8QCWKRJSQcr2DsUy"
+    },
+    {
+      "id": 4,
+      "title": "Introduction to Front-End Development",
+      "organization": "Coursera",
+      "issueDate": "2024",
+      "credentialUrl": "https://drive.google.com/uc?export=download&id=1JcdyMuuLZA6zg3bh759yTxUUCqYr1Z9h"
+    },
+    {
+      "id": 5,
+      "title": "Introduction to Back-End Development",
+      "organization": "Coursera",
+      "issueDate": "2024",
+      "credentialUrl": "https://drive.google.com/uc?export=download&id=18CMglIlDW5rgR33vYrAQihBIJBlIvYer"
+    },
+    {
+      "id": 6,
+      "title": "Huawei Training Course of Artificial Intelligence (HCIA)",
+      "organization": "Faculty of Computers & Artificial Intelligence, Cairo University",
+      "issueDate": "2024",
+      "credentialUrl": "https://drive.google.com/uc?export=download&id=1ahsvq0wFr3e0BqyD72Pov_DBhxP1logV"
+    },
+    {
+      "id": 7,
+      "title": "HCIA-AI V3.5 Course (Indonesian)",
+      "organization": "Huawei Talent Online",
+      "issueDate": "2024",
+      "credentialUrl": "https://drive.google.com/uc?export=download&id=1mpMJF_OMaP1wJTcRhUddmj_qjmFKbfiQ"
+    }
+  ],
+  "experiences": [
+    {
+      "id": 1,
+      "company": "Freelance",
+      "role": "MERN Stack Developer",
+      "startDate": "Jun 2024",
+      "endDate": "Present",
+      "description": "Worked on multiple freelance projects including portfolio websites, e-commerce platforms, and real-time applications using MERN stack."
+    },
+    {
+      "id": 2,
+      "company": "Personal Projects",
+      "role": "Full Stack Developer",
+      "startDate": "Aug 2023",
+      "endDate": "Present",
+      "description": "Built full-stack applications such as chat apps, dashboards, and REST APIs to improve skills in React, Node.js, and MongoDB."
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "🚀 MERN Starter Kit",
+      "description": "A reusable full-stack boilerplate to quickly bootstrap MERN applications with best practices",
+      "techStack": [
+        "React",
+        "Express",
+        "MongoDB",
+        "Node.js"
+      ],
+      "githubUrl": "https://github.com/far120/Starter-Kit-MERN",
+      "liveUrl": "https://github.com/far120/Starter-Kit-MERN",
+      "image": "https://res.cloudinary.com/dti3mte1h/image/upload/v1777666550/c3RhcnRraXRfYXZsamx3",
+      "featured": true
+    },
+    {
+      "id": 2,
+      "title": "Fashion Market (CRUD + Auth)",
+      "description": "E-commerce style app with authentication and core CRUD features.",
+      "techStack": [
+        "React",
+        "Express",
+        "MongoDB",
+        "Node.js"
+      ],
+      "githubUrl": "https://github.com/far120/Fashion-Market",
+      "liveUrl": "https://github.com/far120/Fashion-Market",
+      "image": "https://res.cloudinary.com/dti3mte1h/image/upload/v1777666807/RmFzaG9pbl9NQXJrZXRfbnh3N3h1",
+      "featured": true
+    },
+    {
+      "id": 3,
+      "title": "📌 Restaurant System",
+      "description": "Restaurant management system with structured features and clean UI.",
+      "techStack": [
+        "React",
+        "Express",
+        "MongoDB",
+        "Node.js"
+      ],
+      "githubUrl": "https://github.com/far120/Resturant-System",
+      "liveUrl": "https://github.com/far120/Resturant-System",
+      "image": "https://res.cloudinary.com/dti3mte1h/image/upload/v1777667207/U2NyZWVuc2hvdF8yMDI2LTA1LTAxXzIzMjgyMF9uaHMyY3I=",
+      "featured": false
+    },
+    {
+      "id": 4,
+      "title": "🔥 Live Team Chat (Real-time)",
+      "description": "Real-time chat experience with modern UI and instant messaging features.",
+      "techStack": [
+        "React",
+        "Express",
+        "MongoDB",
+        "Node.js",
+        "Socket.io"
+      ],
+      "githubUrl": "https://github.com/far120/Live-Team-Chat",
+      "liveUrl": "https://live-team-chat.vercel.app/",
+      "image": "https://res.cloudinary.com/dti3mte1h/image/upload/v1777668523/U2NyZWVuc2hvdF8yMDI2LTA1LTAxXzIzNTAxOF9tc3o3cWQ=",
+      "featured": true
+    },
+    {
+      "id": 5,
+      "title": "📋 Group of Tasks",
+      "description": "A task management app to organize tasks efficiently with a clean UI.",
+      "techStack": [
+        "React",
+        "Express",
+        "MongoDB",
+        "Node.js"
+      ],
+      "githubUrl": "https://github.com/far120/GroupofTasks",
+      "liveUrl": "https://groupof-tasks.vercel.app/",
+      "image": "https://res.cloudinary.com/dti3mte1h/image/upload/v1777668718/U2NyZWVuc2hvdF8yMDI2LTA1LTAxXzIzNTMzM19qZG1semU=",
+      "featured": true
+    }
+  ],
+  "services": [
+    {
+      "id": 1,
+      "title": "Portfolio Websites",
+      "description": "I create modern, responsive portfolio websites to showcase your skills, projects, and personal brand with a professional design.",
+      "icon": "fas fa-user"
+    },
+    {
+      "id": 2,
+      "title": "Custom Web Applications",
+      "description": "Developing scalable and secure full-stack web applications tailored to business needs.",
+      "icon": "fas fa-code"
+    },
+    {
+      "id": 3,
+      "title": "Real-time Chat Applications",
+      "description": "Building real-time chat apps using Socket.io with live messaging, notifications, and scalable architecture.",
+      "icon": "fas fa-comments"
+    },
+    {
+      "id": 4,
+      "title": "E-commerce Development",
+      "description": "Full-featured e-commerce applications with product management, cart, authentication, and admin dashboard using MERN stack.",
+      "icon": "fas fa-shopping-cart"
+    },
+    {
+      "id": 5,
+      "title": "API Development & Integration",
+      "description": "Designing RESTful APIs and integrating third-party services to ensure smooth and efficient system communication.",
+      "icon": "fas fa-plug"
+    }
+  ],
+  "skills": [
+    {
+      "id": 1,
+      "name": "React.js",
+      "level": 90,
+      "category": "frontend"
+    },
+    {
+      "id": 2,
+      "name": "Next.js",
+      "level": 85,
+      "category": "frontend"
+    },
+    {
+      "id": 3,
+      "name": "Express.js",
+      "level": 88,
+      "category": "backend"
+    },
+    {
+      "id": 4,
+      "name": "Socket.io",
+      "level": 87,
+      "category": "backend"
+    },
+    {
+      "id": 5,
+      "name": "Tailwind CSS",
+      "level": 85,
+      "category": "frontend"
+    },
+    {
+      "id": 6,
+      "name": "Git & GitHub",
+      "level": 92,
+      "category": "tools"
+    },
+    {
+      "id": 7,
+      "name": "HTML",
+      "level": 95,
+      "category": "frontend"
+    },
+    {
+      "id": 8,
+      "name": "CSS",
+      "level": 90,
+      "category": "frontend"
+    },
+    {
+      "id": 9,
+      "name": "Bootstrap",
+      "level": 88,
+      "category": "frontend"
+    },
+    {
+      "id": 10,
+      "name": "JavaScript",
+      "level": 92,
+      "category": "frontend"
+    },
+    {
+      "id": 11,
+      "name": "TypeScript",
+      "level": 80,
+      "category": "frontend"
+    },
+    {
+      "id": 12,
+      "name": "Node.js",
+      "level": 90,
+      "category": "backend"
+    },
+    {
+      "id": 13,
+      "name": "REST APIs",
+      "level": 90,
+      "category": "backend"
+    },
+    {
+      "id": 14,
+      "name": "MongoDB",
+      "level": 90,
+      "category": "database"
+    },
+    {
+      "id": 15,
+      "name": "Mongoose",
+      "level": 88,
+      "category": "database"
+    },
+    {
+      "id": 16,
+      "name": "MySQL",
+      "level": 75,
+      "category": "database"
+    },
+    {
+      "id": 17,
+      "name": "Postman",
+      "level": 90,
+      "category": "tools"
+    },
+    {
+      "id": 18,
+      "name": "Docker",
+      "level": 70,
+      "category": "tools"
+    },
+    {
+      "id": 19,
+      "name": "Vercel",
+      "level": 85,
+      "category": "tools"
+    }
+  ]
+}
