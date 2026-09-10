@@ -16,7 +16,7 @@ export default function AboutPage() {
       actions={[
         <a
           key="cv"
-          href="https://drive.google.com/file/d/1HAEIvb7V02OUOp1kgslRs8Y_Uy7QVTC3/view?usp=drive_link"
+          href="https://drive.google.com/file/d/1xYrjilegxPFGIq-U4xhbOjMtR0ZkshrI/view?usp=sharing"
           target="_blank"
           rel="noreferrer"
           className="inline-flex items-center gap-2 rounded-full bg-slate-950 px-5 py-3 text-sm font-semibold text-white transition hover:bg-slate-800 dark:bg-emerald-500 dark:text-slate-950 dark:hover:bg-emerald-400"
