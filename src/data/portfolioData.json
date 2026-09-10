@@ -60,35 +60,29 @@
   "experiences": [
     {
       "id": 1,
-      "company": "Freelance",
-      "role": "MERN Stack Developer",
+      "company": "Self-Directed Projects",
+      "role": "Full-Stack Developer",
       "startDate": "Jun 2024",
       "endDate": "Present",
-      "description": "Worked on multiple freelance projects including portfolio websites, e-commerce platforms, and real-time applications using MERN stack."
-    },
-    {
-      "id": 2,
-      "company": "Personal Projects",
-      "role": "Full Stack Developer",
-      "startDate": "Aug 2023",
-      "endDate": "Present",
-      "description": "Built full-stack applications such as chat apps, dashboards, and REST APIs to improve skills in React, Node.js, and MongoDB."
+      "description": "Built 5+ full-stack web applications using React.js, Node.js, Express.js, and MongoDB through self-directed projects and hands-on development.\nBuilt 15+ reusable React UI components and 10+ backend REST APIs with integrated JWT authentication and Joi data validation workflows.\nStructured 6+ MongoDB database schemas and Mongoose models to execute optimized CRUD operations across web applications.\nManaged Git/GitHub repositories and deployed web applications using Vercel and Render."
     }
   ],
   "projects": [
     {
       "id": 1,
-      "title": "🚀 MERN Starter Kit",
-      "description": "A reusable full-stack boilerplate to quickly bootstrap MERN applications with best practices",
+      "title": "🚀ELFAR Full-Stack Starter — Scalable Architecture & Starter Template",
+      "description": "🏗️ Designed a production-ready boilerplate enforcing clean separation of concerns and scalable folder structures.\n🔐 Authored JWT auth with 4-tier Role-Based Access Control (RBAC) and audit logging via Winston & MongoDB.\n🤖 Embedded Google Gemini AI (@google/genai) SDK for automated profile analytics and project diagnostics.\n🔄 Implemented resilient data fetching with TanStack Query v5, Axios 401 interceptors, and Zod schema validation.",
       "techStack": [
-        "React",
-        "Express",
-        "MongoDB",
-        "Node.js"
+        "React 19",
+        "Express 5",
+        "TypeScript",
+        "MongoDB (Mongoose 9)",
+        "and Tailwind CSSv4",
+        "Google Gemini AI (@google/genai)"
       ],
-      "githubUrl": "https://github.com/far120/Starter-Kit-MERN",
-      "liveUrl": "https://github.com/far120/Starter-Kit-MERN",
-      "image": "https://res.cloudinary.com/dti3mte1h/image/upload/v1777666550/c3RhcnRraXRfYXZsamx3",
+      "githubUrl": "https://github.com/far120/ELFAR-Full-Stack-Starter",
+      "liveUrl": "https://github.com/far120/ELFAR-Full-Stack-Starter",
+      "image": "https://res-console.cloudinary.com/dti3mte1h/thumbnails/v1/image/upload/v1777667207/U2NyZWVuc2hvdF8yMDI2LTA1LTAxXzIzMjgyMF9uaHMyY3I=/preview",
       "featured": true
     },
     {
@@ -266,38 +260,74 @@
     },
     {
       "id": 14,
+      "name": "Authentication (JWT)",
+      "level": 85,
+      "category": "backend"
+    },
+    {
+      "id": 15,
       "name": "MongoDB",
       "level": 90,
       "category": "database"
     },
     {
-      "id": 15,
+      "id": 16,
       "name": "Mongoose",
       "level": 88,
       "category": "database"
     },
     {
-      "id": 16,
+      "id": 17,
       "name": "MySQL",
       "level": 75,
       "category": "database"
     },
     {
-      "id": 17,
+      "id": 18,
       "name": "Postman",
       "level": 90,
       "category": "tools"
     },
     {
-      "id": 18,
+      "id": 19,
       "name": "Docker",
       "level": 70,
       "category": "tools"
     },
     {
-      "id": 19,
+      "id": 20,
       "name": "Vercel",
       "level": 85,
+      "category": "tools"
+    },
+    {
+      "id": 21,
+      "name": "PostgreSQL",
+      "level": 70,
+      "category": "database"
+    },
+    {
+      "id": 22,
+      "name": "Prisma ORM",
+      "level": 75,
+      "category": "database"
+    },
+    {
+      "id": 23,
+      "name": "OpenAI API",
+      "level": 85,
+      "category": "tools"
+    },
+    {
+      "id": 24,
+      "name": "Google Gemini API",
+      "level": 85,
+      "category": "tools"
+    },
+    {
+      "id": 25,
+      "name": "Prompt Engineering",
+      "level": 80,
       "category": "tools"
     }
   ]

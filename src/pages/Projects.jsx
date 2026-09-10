@@ -2,6 +2,7 @@ import { useMemo, useState } from "react";
 import { FiCode, FiGithub, FiLink, FiSearch, FiStar } from "react-icons/fi";
 import PageShell from "../components/portfolio/PageShell";
 import GlassCard from "../components/portfolio/GlassCard";
+import ExpandableText from "../components/portfolio/ExpandableText";
 import { formatImageUrl } from "../utils/media";
 import portfolioData from "../data/portfolioData.json";
 
@@ -89,7 +90,7 @@ export default function ProjectsPage() {
                   <h3 className="text-xl font-bold text-slate-950 dark:text-white">{project.title}</h3>
                   {project.featured ? <span className="rounded-full bg-amber-50 px-3 py-1 text-xs font-semibold text-amber-700 dark:bg-amber-950/50 dark:text-amber-300">Featured</span> : null}
                 </div>
-                <p className="mt-3 text-sm leading-6 text-slate-600 dark:text-slate-300">{project.description}</p>
+                <ExpandableText text={project.description} />
                 <div className="mt-4 flex flex-wrap gap-2">
                   {(project.techStack || []).map((tag) => (
                     <span key={tag} className="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700 dark:bg-slate-800 dark:text-slate-300">

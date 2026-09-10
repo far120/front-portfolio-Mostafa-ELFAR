@@ -1,7 +1,10 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
-import { FiArrowUpRight, FiCode, FiCpu, FiDatabase, FiLayers, FiMail, FiShield, FiSmartphone, FiStar } from "react-icons/fi";
+import { FiArrowRight, FiArrowUpRight, FiCode, FiCpu, FiDatabase, FiGithub, FiLayers, FiLink, FiMail, FiShield, FiSmartphone, FiStar } from "react-icons/fi";
 import GlassCard from "../components/portfolio/GlassCard";
 import SectionHeading from "../components/portfolio/SectionHeading";
+import ExpandableText from "../components/portfolio/ExpandableText";
+import { formatImageUrl } from "../utils/media";
 import portfolioData from "../data/portfolioData.json";
 
 const featureCopy = [
@@ -12,9 +15,14 @@ const featureCopy = [
 
 export default function Home() {
   const { about, projects = [], skills = [], services = [] } = portfolioData;
+  const [failedImages, setFailedImages] = useState({});
 
   const featuredProjects = projects.filter((p) => p.featured);
   const featuredSkills = [...skills].sort((a, b) => b.level - a.level).slice(0, 6);
+
+  const handleImageError = (id) => {
+    setFailedImages((prev) => ({ ...prev, [id]: true }));
+  };
 
   return (
     <div className="relative overflow-hidden bg-[radial-gradient(circle_at_top_left,rgba(16,185,129,0.16),transparent_26%),radial-gradient(circle_at_top_right,rgba(245,158,11,0.14),transparent_24%),linear-gradient(180deg,#f8fafc_0%,#eef2ff_45%,#f8fafc_100%)] text-slate-900 dark:bg-[radial-gradient(circle_at_top_left,rgba(16,185,129,0.15),transparent_26%),radial-gradient(circle_at_top_right,rgba(245,158,11,0.12),transparent_24%),linear-gradient(180deg,#020617_0%,#0f172a_45%,#020617_100%)] dark:bg-slate-950 dark:text-slate-100">
@@ -129,47 +137,95 @@ export default function Home() {
           </GlassCard>
         </section>
 
-        <section id="projects" className="space-y-5">
-          <SectionHeading eyebrow="Projects" title="Featured projects." description="Key highlights from completed work." />
-          <div className="grid gap-5 md:grid-cols-3">
-            {featuredProjects.map((project, index) => (
-              <GlassCard key={project.id || index} delay={index * 0.05} className="overflow-hidden">
-                <div className="aspect-[16/10] bg-[linear-gradient(135deg,#0f172a_0%,#0f766e_100%)] overflow-hidden">
-                  {project.image ? (
-                    <img src={project.image} alt={project.title} className="h-full w-full object-cover" />
-                  ) : (
-                    <div className="flex h-full items-end p-5 text-white">
-                      <div>
-                        {project.featured ? <FiStar className="text-amber-300" /> : null}
-                        <h3 className="mt-2 text-2xl font-black">{project.title}</h3>
-                      </div>
+        <section id="projects" className="space-y-6">
+          <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+            <SectionHeading eyebrow="Featured Projects" title="High-Impact Work" description="Curated selection of full-stack web applications and architectures." />
+            <Link
+              to="/projects"
+              className="inline-flex items-center gap-2 text-sm font-bold text-emerald-700 hover:text-emerald-600 dark:text-emerald-400 dark:hover:text-emerald-300 transition-colors group"
+            >
+              <span>Explore All Projects ({projects.length})</span>
+              <FiArrowRight className="transition-transform group-hover:translate-x-1" />
+            </Link>
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {featuredProjects.map((project, index) => {
+              const hasImage = project.image && !failedImages[project.id || index];
+
+              return (
+                <GlassCard key={project.id || index} delay={index * 0.05} className="group flex flex-col justify-between overflow-hidden">
+                  <div>
+                    <div className="relative aspect-[16/10] overflow-hidden bg-slate-900">
+                      {hasImage ? (
+                        <img
+                          src={formatImageUrl(project.image)}
+                          alt={project.title}
+                          onError={() => handleImageError(project.id || index)}
+                          className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                        />
+                      ) : (
+                        <div className="flex h-full w-full items-end p-6 text-white bg-[linear-gradient(135deg,#0f172a_0%,#0f766e_100%)]">
+                          <div>
+                            <FiCode className="text-3xl text-amber-300 mb-2" />
+                            <h3 className="text-xl font-bold">{project.title}</h3>
+                          </div>
+                        </div>
+                      )}
+                      <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent opacity-80" />
+                      {project.featured && (
+                        <div className="absolute top-3 right-3 flex items-center gap-1.5 rounded-full bg-slate-950/80 backdrop-blur-md px-3 py-1 text-xs font-semibold text-amber-300 border border-amber-400/20 shadow-lg">
+                          <FiStar className="fill-amber-300 text-amber-300 text-xs" />
+                          <span>Featured</span>
+                        </div>
+                      )}
                     </div>
-                  )}
-                </div>
-                <div className="p-5">
-                  <div className="flex items-center justify-between">
-                    <h3 className="text-xl font-bold text-slate-950 dark:text-white">{project.title}</h3>
-                    {project.featured && <span className="rounded-full bg-amber-50 px-3 py-1 text-xs font-semibold text-amber-700 dark:bg-amber-950/50 dark:text-amber-300">Featured</span>}
+
+                    <div className="p-6">
+                      <h3 className="text-xl font-bold tracking-tight text-slate-950 dark:text-white group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">
+                        {project.title}
+                      </h3>
+
+                      <ExpandableText text={project.description} />
+                    </div>
                   </div>
-                  <p className="mt-3 text-sm leading-6 text-slate-600 dark:text-slate-300">{project.description}</p>
-                  <div className="mt-4 flex flex-wrap gap-2">
-                    {(project.techStack || []).map((tag) => (
-                      <span key={tag} className="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700 dark:bg-slate-800 dark:text-slate-300">
-                        {tag}
-                      </span>
-                    ))}
+
+                  <div className="p-6 pt-0">
+                    <div className="mb-5 flex flex-wrap gap-1.5">
+                      {(project.techStack || []).map((tag) => (
+                        <span
+                          key={tag}
+                          className="rounded-full border border-slate-200/80 bg-slate-100/80 px-3 py-1 text-xs font-medium text-slate-700 dark:border-slate-800 dark:bg-slate-800/60 dark:text-slate-300"
+                        >
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+
+                    <div className="flex items-center gap-3">
+                      <a
+                        href={project.liveUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="inline-flex flex-1 items-center justify-center gap-2 rounded-full bg-slate-950 px-4 py-2.5 text-xs font-semibold text-white transition-all hover:bg-slate-800 hover:-translate-y-0.5 dark:bg-emerald-500 dark:text-slate-950 dark:hover:bg-emerald-400"
+                      >
+                        <span>Live Preview</span>
+                        <FiLink className="text-xs" />
+                      </a>
+                      <a
+                        href={project.githubUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="inline-flex items-center justify-center gap-2 rounded-full border border-slate-300 bg-white/50 px-4 py-2.5 text-xs font-semibold text-slate-700 transition-all hover:bg-slate-50 hover:-translate-y-0.5 dark:border-slate-700 dark:bg-slate-900/50 dark:text-slate-300 dark:hover:bg-slate-800"
+                      >
+                        <span>Source</span>
+                        <FiGithub className="text-xs" />
+                      </a>
+                    </div>
                   </div>
-                  <div className="mt-5 flex gap-3">
-                    <a href={project.liveUrl} target="_blank" rel="noreferrer" className="rounded-full bg-slate-950 px-4 py-2 text-xs font-semibold text-white transition hover:bg-slate-800 dark:bg-emerald-500 dark:text-slate-950 dark:hover:bg-emerald-400">
-                      Live Preview
-                    </a>
-                    <a href={project.githubUrl} target="_blank" rel="noreferrer" className="rounded-full border border-slate-300 px-4 py-2 text-xs font-semibold text-slate-700 transition hover:bg-slate-50 dark:border-slate-700 dark:text-slate-300 dark:hover:bg-slate-800">
-                      GitHub
-                    </a>
-                  </div>
-                </div>
-              </GlassCard>
-            ))}
+                </GlassCard>
+              );
+            })}
           </div>
         </section>
 
