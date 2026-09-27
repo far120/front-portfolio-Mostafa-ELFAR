@@ -51,7 +51,7 @@ export default function Footer() {
             <a href="https://github.com/far120" target="_blank" rel="noreferrer" className="rounded-full border border-white/10 bg-white/5 p-3 text-white transition hover:bg-white/10">
               <FaGithub />
             </a>
-            <a href="https://www.linkedin.com/in/mostafa-mahmoud-el-far-6a67732b5" target="_blank" rel="noreferrer" className="rounded-full border border-white/10 bg-white/5 p-3 text-white transition hover:bg-white/10">
+            <a href="https://www.linkedin.com/in/mostafa-mahmoud-elfar-6a67732b5" target="_blank" rel="noreferrer" className="rounded-full border border-white/10 bg-white/5 p-3 text-white transition hover:bg-white/10">
               <FaLinkedinIn />
             </a>
             <a href="https://wa.me/01102453675" target="_blank" rel="noreferrer" className="rounded-full border border-white/10 bg-white/5 p-3 text-white transition hover:bg-white/10">
