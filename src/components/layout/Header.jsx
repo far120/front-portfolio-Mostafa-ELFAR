@@ -27,7 +27,7 @@ export default function Header() {
           </div>
           <div>
             <p className="text-sm font-black uppercase tracking-[0.3em] text-slate-950 dark:text-white">Mostafa Elfar</p>
-            <p className="text-xs font-medium text-slate-500 dark:text-slate-400">Frontend Portfolio</p>
+            <p className="text-xs font-medium text-slate-500 dark:text-slate-400">Full-Stack Developer Portfolio</p>
           </div>
         </Link>
 
