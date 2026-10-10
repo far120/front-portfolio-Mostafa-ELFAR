@@ -62,7 +62,7 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-white/10 py-4 text-center text-sm text-slate-500">
-        © {new Date().getFullYear()} {APP_NAME}. Built with React, Tailwind, Framer Motion, Node, and Express.
+        © {new Date().getFullYear()} {APP_NAME}. Built with React, Tailwind, Node, and Express.
       </div>
     </footer>
   );
