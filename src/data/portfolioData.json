@@ -203,7 +203,7 @@
     {
       "id": 1,
       "name": "React.js",
-      "level": 96,
+      "level": 93,
       "category": "frontend"
     },
     {
@@ -215,7 +215,7 @@
     {
       "id": 3,
       "name": "Express.js",
-      "level": 94,
+      "level": 92,
       "category": "backend"
     },
     {
@@ -257,19 +257,19 @@
     {
       "id": 10,
       "name": "JavaScript",
-      "level": 95,
+      "level": 90,
       "category": "frontend"
     },
     {
       "id": 11,
       "name": "TypeScript",
-      "level": 95,
+      "level": 85,
       "category": "frontend"
     },
     {
       "id": 12,
       "name": "Node.js",
-      "level": 95,
+      "level": 90,
       "category": "backend"
     },
     {
@@ -281,7 +281,7 @@
     {
       "id": 14,
       "name": "Authentication (JWT)",
-      "level": 90,
+      "level": 88,
       "category": "backend"
     },
     {
@@ -347,7 +347,7 @@
     {
       "id": 25,
       "name": "Prompt Engineering",
-      "level": 99,
+      "level": 80,
       "category": "tools"
     }
   ]
