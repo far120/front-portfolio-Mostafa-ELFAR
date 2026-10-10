@@ -145,7 +145,26 @@
       "liveUrl": "https://groupof-tasks.vercel.app/",
       "image": "https://res.cloudinary.com/dti3mte1h/image/upload/v1777668718/U2NyZWVuc2hvdF8yMDI2LTA1LTAxXzIzNTMzM19qZG1semU=",
       "featured": true
-    }
+    },
+        {
+  "id": 6,
+  "title": "📋 CodeAlpha Project Management Tool",
+  "description": "A full-stack project management application featuring secure authentication, role-based access control (RBAC), project and task management, and a structured backend architecture built with Node.js, Express, TypeScript, MongoDB, Mongoose, and Zod.",
+  "techStack": [
+    "React",
+    "Node.js",
+    "Express",
+    "TypeScript",
+    "MongoDB",
+    "Mongoose",
+    "Zod",
+    "JWT",
+    "Postman"
+  ],
+  "githubUrl": "https://github.com/far120/CodeAlpha_-Project-Management-Tool",
+  "liveUrl": "https://github.com/far120/CodeAlpha_-Project-Management-Tool",
+  "featured": true
+}
   ],
 
   "services": [
@@ -178,26 +197,7 @@
       "title": "API Development & Integration",
       "description": "Designing RESTful APIs and integrating third-party services to ensure smooth and efficient system communication.",
       "icon": "fas fa-plug"
-    },
-    {
-  "id": 6,
-  "title": "📋 CodeAlpha Project Management Tool",
-  "description": "A full-stack project management application featuring secure authentication, role-based access control (RBAC), project and task management, and a structured backend architecture built with Node.js, Express, TypeScript, MongoDB, Mongoose, and Zod.",
-  "techStack": [
-    "React",
-    "Node.js",
-    "Express",
-    "TypeScript",
-    "MongoDB",
-    "Mongoose",
-    "Zod",
-    "JWT",
-    "Postman"
-  ],
-  "githubUrl": "https://github.com/far120/CodeAlpha_-Project-Management-Tool",
-  "liveUrl": "https://github.com/far120/CodeAlpha_-Project-Management-Tool",
-  "featured": true
-}
+    }
   ],
   "skills": [
     {
