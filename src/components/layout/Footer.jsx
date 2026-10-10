@@ -21,7 +21,7 @@ export default function Footer() {
             </div>
             <div>
               <p className="text-sm font-black uppercase tracking-[0.3em] text-white">{APP_NAME}</p>
-              <p className="text-xs text-slate-400">MERN Portfolio Frontend</p>
+              <p className="text-xs text-slate-400">Full-Stack Developer Portfolio</p>
             </div>
           </div>
           <p className="mt-4 max-w-md text-sm leading-7 text-slate-400">
