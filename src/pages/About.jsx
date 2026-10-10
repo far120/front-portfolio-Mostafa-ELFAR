@@ -12,11 +12,11 @@ export default function AboutPage() {
     <PageShell
       eyebrow="About"
       title={about.name}
-      description={about.description}
+      // description={about.description}
       actions={[
         <a
           key="cv"
-          href="https://drive.google.com/file/d/1xYrjilegxPFGIq-U4xhbOjMtR0ZkshrI/view?usp=sharing"
+          href="https://drive.google.com/file/d/1C3YFOeusnsNROpjvgK4NlrR_QbSfK1Gq/view?usp=drive_link"
           target="_blank"
           rel="noreferrer"
           className="inline-flex items-center gap-2 rounded-full bg-slate-950 px-5 py-3 text-sm font-semibold text-white transition hover:bg-slate-800 dark:bg-emerald-500 dark:text-slate-950 dark:hover:bg-emerald-400"
@@ -64,10 +64,12 @@ export default function AboutPage() {
             <SectionHeading eyebrow="Profile" title={about.title} description={about.description} />
             <div className="mt-6 grid gap-3 sm:grid-cols-2">
               {[
-                "Responsive Tailwind interfaces",
-                "Clean React components",
-                "Reusable architecture",
-                "Smooth page animations",
+                 "React.js & Next.js",
+                "Node.js & Express.js",
+                "REST APIs & JWT Authentication",
+                "MongoDB & PostgreSQL",
+                "TypeScript & JavaScript",
+                "Clean Architecture & RBAC",
               ].map((item) => (
                 <div key={item} className="rounded-2xl bg-slate-50 px-4 py-3 text-sm font-medium text-slate-700 dark:bg-slate-900 dark:text-slate-300">
                   {item}
@@ -77,9 +79,15 @@ export default function AboutPage() {
 
             <div className="mt-6 rounded-3xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 dark:border-slate-800 dark:bg-slate-900/50 dark:text-slate-300">
               <p className="font-semibold text-slate-950 dark:text-white">Email</p>
-              <a href={`mailto:${about.email}`} className="mt-2 inline-flex text-emerald-700 transition hover:text-emerald-800 dark:text-emerald-400">
-                {about.email}
-              </a>
+              
+<a
+  href={`mailto:${about.email}`}
+  className="mt-4 inline-flex items-center gap-2 rounded-full bg-emerald-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-emerald-700 dark:bg-emerald-500 dark:text-slate-950 dark:hover:bg-emerald-400"
+>
+  <FiMail size={18} />
+  {about.email}
+</a>
+
             </div>
           </GlassCard>
 
@@ -87,10 +95,10 @@ export default function AboutPage() {
             <SectionHeading eyebrow="What to expect" title="Clean delivery with practical UX choices." description="The frontend is designed to be fast, readable, and easy to extend." />
             <div className="mt-6 grid gap-4 sm:grid-cols-2">
               {[
-                { label: "Availability", value: "Open for work" },
-                { label: "Specialty", value: "React + Tailwind" },
-                { label: "Focus", value: "Modern Frontend UI" },
-                { label: "Style", value: "Clean & Premium" },
+                 { label: "Availability", value: "Open to Work" },
+                 { label: "Specialty", value: "Full-Stack Development" },
+                 { label: "Backend", value: "Node.js & Express.js" },
+                 { label: "Frontend", value: "React.js & Next.js" },
               ].map((item) => (
                 <article key={item.label} className="rounded-3xl border border-slate-200 bg-slate-50 p-5 transition-transform duration-300 hover:-translate-y-0.5 dark:border-slate-800 dark:bg-slate-900/50">
                   <p className="text-xs uppercase tracking-[0.3em] text-slate-500 dark:text-slate-400">{item.label}</p>
