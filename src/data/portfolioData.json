@@ -81,8 +81,8 @@
         "Google Gemini AI (@google/genai)"
       ],
       "githubUrl": "https://github.com/far120/ELFAR-Full-Stack-Starter",
-      "liveUrl": "https://github.com/far120/ELFAR-Full-Stack-Starter",
-      "image": "https://res-console.cloudinary.com/dti3mte1h/thumbnails/v1/image/upload/v1777667207/U2NyZWVuc2hvdF8yMDI2LTA1LTAxXzIzMjgyMF9uaHMyY3I=/preview",
+      "liveUrl": "https://github.com/far120/Fashion-Market-clothes--/tree/master/image%20of%20project",
+      "image": "https://github.com/far120/Fashion-Market-clothes--/blob/master/image%20of%20project/screencapture-localhost-5173-menu-2026-09-11-21_40_37.png",
       "featured": true
     },
     {
@@ -95,8 +95,8 @@
         "MongoDB",
         "Node.js"
       ],
-      "githubUrl": "https://github.com/far120/Fashion-Market",
-      "liveUrl": "https://github.com/far120/Fashion-Market",
+      "githubUrl": "https://github.com/far120/Fashion-Market-clothes--",
+      "liveUrl": "https://github.com/far120/Fashion-Market-clothes--",
       "image": "https://res.cloudinary.com/dti3mte1h/image/upload/v1777666807/RmFzaG9pbl9NQXJrZXRfbnh3N3h1",
       "featured": true
     },
@@ -110,9 +110,9 @@
         "MongoDB",
         "Node.js"
       ],
-      "githubUrl": "https://github.com/far120/Resturant-System",
-      "liveUrl": "https://github.com/far120/Resturant-System",
-      "image": "https://res.cloudinary.com/dti3mte1h/image/upload/v1777667207/U2NyZWVuc2hvdF8yMDI2LTA1LTAxXzIzMjgyMF9uaHMyY3I=",
+      "githubUrl": "https://github.com/far120/Resturant-last-version",
+      "liveUrl": "https://github.com/far120/Resturant-last-version/tree/master/image%20of%20project",
+      "image": "https://github.com/far120/Resturant-last-version/blob/master/image%20of%20project/screencapture-localhost-5175-2026-09-11-21_57_23.png",
       "featured": false
     },
     {
@@ -147,6 +147,7 @@
       "featured": true
     }
   ],
+
   "services": [
     {
       "id": 1,
@@ -177,7 +178,26 @@
       "title": "API Development & Integration",
       "description": "Designing RESTful APIs and integrating third-party services to ensure smooth and efficient system communication.",
       "icon": "fas fa-plug"
-    }
+    },
+    {
+  "id": 6,
+  "title": "📋 CodeAlpha Project Management Tool",
+  "description": "A full-stack project management application featuring secure authentication, role-based access control (RBAC), project and task management, and a structured backend architecture built with Node.js, Express, TypeScript, MongoDB, Mongoose, and Zod.",
+  "techStack": [
+    "React",
+    "Node.js",
+    "Express",
+    "TypeScript",
+    "MongoDB",
+    "Mongoose",
+    "Zod",
+    "JWT",
+    "Postman"
+  ],
+  "githubUrl": "https://github.com/far120/CodeAlpha_-Project-Management-Tool",
+  "liveUrl": "https://github.com/far120/CodeAlpha_-Project-Management-Tool",
+  "featured": true
+}
   ],
   "skills": [
     {
