@@ -60,7 +60,7 @@
   "experiences": [
     {
       "id": 1,
-      "company": "Self-Directed Projects",
+      "company": "Freelance Projects & self-directed projects",
       "role": "Full-Stack Developer",
       "startDate": "Jun 2024",
       "endDate": "Present",
@@ -203,7 +203,7 @@
     {
       "id": 1,
       "name": "React.js",
-      "level": 90,
+      "level": 96,
       "category": "frontend"
     },
     {
@@ -215,7 +215,7 @@
     {
       "id": 3,
       "name": "Express.js",
-      "level": 88,
+      "level": 94,
       "category": "backend"
     },
     {
@@ -227,7 +227,7 @@
     {
       "id": 5,
       "name": "Tailwind CSS",
-      "level": 85,
+      "level": 90,
       "category": "frontend"
     },
     {
@@ -257,19 +257,19 @@
     {
       "id": 10,
       "name": "JavaScript",
-      "level": 92,
+      "level": 95,
       "category": "frontend"
     },
     {
       "id": 11,
       "name": "TypeScript",
-      "level": 80,
+      "level": 95,
       "category": "frontend"
     },
     {
       "id": 12,
       "name": "Node.js",
-      "level": 90,
+      "level": 95,
       "category": "backend"
     },
     {
@@ -281,7 +281,7 @@
     {
       "id": 14,
       "name": "Authentication (JWT)",
-      "level": 85,
+      "level": 90,
       "category": "backend"
     },
     {
@@ -293,19 +293,19 @@
     {
       "id": 16,
       "name": "Mongoose",
-      "level": 88,
+      "level": 90,
       "category": "database"
     },
     {
       "id": 17,
       "name": "MySQL",
-      "level": 75,
+      "level": 85,
       "category": "database"
     },
     {
       "id": 18,
       "name": "Postman",
-      "level": 90,
+      "level": 95,
       "category": "tools"
     },
     {
@@ -323,13 +323,13 @@
     {
       "id": 21,
       "name": "PostgreSQL",
-      "level": 70,
+      "level": 90,
       "category": "database"
     },
     {
       "id": 22,
       "name": "Prisma ORM",
-      "level": 75,
+      "level": 90,
       "category": "database"
     },
     {
@@ -347,7 +347,7 @@
     {
       "id": 25,
       "name": "Prompt Engineering",
-      "level": 80,
+      "level": 99,
       "category": "tools"
     }
   ]
